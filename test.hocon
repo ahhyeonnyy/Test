@@ -1,0 +1,19 @@
+akka =
+{
+cluster =
+{
+collector =
+{
+sample-interval = "test hocon"
+gossip-interval = 1234
+service = SERVICE
+user = user
+password = 0000
+}
+
+periodic-tasks-initial-delay = 5s
+moving-average-half-life = 100
+dispatcher = ["akka.tcp = //mls-cluster@123456789"]
+}
+
+}
